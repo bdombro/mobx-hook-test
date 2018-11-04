@@ -3,9 +3,20 @@
  */
 import * as React from "react";
 import {render} from "react-dom";
-import {HotApp} from "./App";
-import { setConfig } from "react-hot-loader";
+import {observer, useObservable} from "mobx-react";
 
-setConfig({ pureSFC: true });
+const Counter = observer(props => {
+    const counter = useObservable({
+        count: 0
+    });
+    return (
+        <div>
+            {counter.count}
+            <button onClick={() => counter.count--}>-</button>
+            <button onClick={() => counter.count++}>+</button>
+            <hr />
+        </div>
+    );
+});
 
-render(<HotApp />, document.getElementById("root"));
+render(<Counter />, document.getElementById("root"));

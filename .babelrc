@@ -22,9 +22,7 @@
           "loose": true
         }]
       ],
-      "plugins": [
-        "react-hot-loader/babel"
-      ]
+      "plugins": []
     }
   }
 }

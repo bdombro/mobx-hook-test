@@ -44,7 +44,7 @@ module.exports = {
   ],
   devServer: {
     contentBase: outPath,
-    hot: true,
+    hot: false,
     inline: true,
     historyApiFallback: {
       disableDotRule: true
