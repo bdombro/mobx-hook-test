@@ -1,0 +1,52 @@
+{
+  "name": "mobx-test-app",
+  "private": false,
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=9999.0.0",
+    "yarn": ">=1.9.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-rc.2",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-rc.2",
+    "@babel/plugin-proposal-decorators": "^7.0.0-rc.2",
+    "@babel/plugin-proposal-export-namespace-from": "^7.0.0-rc.2",
+    "@babel/plugin-proposal-function-sent": "^7.0.0-rc.2",
+    "@babel/plugin-proposal-json-strings": "^7.0.0-rc.2",
+    "@babel/plugin-proposal-numeric-separator": "^7.0.0-rc.2",
+    "@babel/plugin-proposal-throw-expressions": "^7.0.0-rc.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0-rc.2",
+    "@babel/plugin-syntax-import-meta": "^7.0.0-rc.2",
+    "@babel/plugin-transform-runtime": "^7.0.0-rc.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0-rc.2",
+    "@babel/preset-typescript": "^7.1.0",
+    "@babel/runtime": "^7.0.0-rc.2",
+    "@types/node": "^10.11.0",
+    "@types/react": "^16.4.18",
+    "@types/react-dom": "^16.0.7",
+    "@types/webpack": "^4.4.12",
+    "babel-loader": "^8.0.0-beta.6",
+    "prettier": "^1.14.3",
+    "tslint-config-prettier": "^1.15.0",
+    "typescript": "^3.0.3",
+    "webpack": "^4.17.0",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5",
+    "webpack-hot-middleware": "^2.24.2"
+  },
+  "scripts": {
+    "serve": "webpack-dev-server --mode development --port 3001 --progress --inline --hot --colors --https",
+    "build": "webpack -p --progress --colors --display=minimal",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "mobx": "^5.0.4",
+    "mobx-react": "git+https://github.com/johot/mobx-react.git",
+    "mobx-react-devtools": "^6.0.2",
+    "react": "^16.7.0-alpha.0",
+    "react-dom": "^16.7.0-alpha.0",
+    "react-hot-loader": "^4.3.4"
+  },
+  "version": "0.4.4"
+}
