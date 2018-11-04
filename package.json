@@ -36,7 +36,7 @@
     "webpack-hot-middleware": "^2.24.2"
   },
   "scripts": {
-    "serve": "webpack-dev-server --mode development --port 3001 --progress --inline --hot --colors --https",
+    "serve": "webpack-dev-server --mode development --port 3001 --progress --inline --colors --https",
     "build": "webpack -p --progress --colors --display=minimal",
     "type-check": "tsc --noEmit"
   },
