@@ -1,6 +1,13 @@
-Tests git+https://github.com/johot/mobx-react.git
+Tests fork git+https://github.com/johot/mobx-react.git for 16.7.0-alpha.0 and hook compatibility.
 
-There are two branches, one with (master) and one without hot reloading.
+Known issue: Using observer with functions is throwing an error with React 16.7.0-alpha.0 
+
+There are 3 branches:
+
+* master -> observer test with hot reloading
+* no-hot-reload -> observer test without hot reloading. This demonstrates that hot reload is not the cause of the issue.
+* basic-hook-test -> same as no-hot-reload, except using state hooks instead of 
+mobx or observer. This demonstrates that hooks are in fact working with the current build
 
 To run,
 
