@@ -1,5 +1,7 @@
 Tests git+https://github.com/johot/mobx-react.git
 
+There are two branches, one with (master) and one without hot reloading.
+
 To run,
 
 ```
