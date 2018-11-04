@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "mobx": "^5.0.4",
-    "mobx-react": "git+https://github.com/johot/mobx-react.git",
+    "mobx-react": "^5.3.6",
     "mobx-react-devtools": "^6.0.2",
     "react": "^16.7.0-alpha.0",
     "react-dom": "^16.7.0-alpha.0",
